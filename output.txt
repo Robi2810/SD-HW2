@@ -1,0 +1,9 @@
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id enim euismod erat
+elementum cursus. In hac habitasse platea dictumst. Etiam vitae tortor ipsum. Morbi massa
+augue, lacinia sed nisl id, congue eleifend lorem.
+
+require Folder2/File2-2.txt
+
+Praesent feugiat egestas sem, id luctus lectus dignissim ac. Donec elementum rhoncus
+quam, vitae viverra massa euismod a. Morbi dictum sapien sed porta tristique. Donec varius
+convallis quam in fringilla.

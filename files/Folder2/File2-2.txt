@@ -1,0 +1,5 @@
+require Folder2/File2-1.txt
+
+In pretium dictum lacinia. In rutrum, neque a dignissim maximus, dolor mi pretium ante, nec
+volutpat justo dolor non nulla. Vivamus nec suscipit nisl, ornare luctus erat. Aliquam eget est
+orci. Proin orci urna, elementum a nunc ac, fermentum varius eros. Mauris id massa elit.
