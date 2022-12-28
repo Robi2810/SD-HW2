@@ -7,10 +7,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Concatenator {
-    public Concatenator() {
-
-    }
-
     public void concatenateFiles(List<String> paths) {
         File resultFile = new File("output.txt");
 

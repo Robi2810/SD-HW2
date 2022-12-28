@@ -27,13 +27,6 @@ public class RequirementSearcher {
         search(rootDirectory);
     }
 
-    public void outputFilesToConcatenate() {
-        System.out.println("Files:\n");
-        for (var file : filesToConcatenate) {
-            System.out.println(file);
-        }
-    }
-
     private void search(File initialDirectory) {
         if (!initialDirectory.exists()) {
             System.out.println("File/directory does not exist!");
