@@ -13,20 +13,22 @@ public class Concatenator {
 
     public void concatenateFiles(List<String> paths) {
         File resultFile = new File("output.txt");
-        for (var path : paths) {
-            if (Files.exists(Path.of(path))) {
-                File file = new File(path);
-                try (PrintWriter printWriter = new PrintWriter(resultFile)) {
+
+        try (PrintWriter printWriter = new PrintWriter(resultFile)) {
+            for (var path : paths) {
+                if (Files.exists(Path.of(path))) {
+                    File file = new File(path);
                     Scanner scanner = new Scanner(file);
                     while (scanner.hasNextLine()) {
                         String nextLine = scanner.nextLine();
                         printWriter.println(nextLine);
                     }
+                    printWriter.println();
                     scanner.close();
-                } catch (FileNotFoundException exception) {
-                    System.out.println("File not found");
                 }
             }
+        } catch (FileNotFoundException exception) {
+            System.out.println("File not found");
         }
     }
 }

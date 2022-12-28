@@ -2,11 +2,12 @@ import java.io.File;
 
 public class Main {
     public static void main(String[] args) {
-        RequirementSearcher requirementSearcher = new RequirementSearcher();
-        requirementSearcher.findRequirements(
-                new File(new File("").getAbsolutePath() + "\\files\\Folder1\\File1-1.txt")
-        );
+        RequirementSearcher requirementSearcher = new RequirementSearcher(new File("").getAbsolutePath() + "\\files");
+        requirementSearcher.search();
+        requirementSearcher.outputFilesToConcatenate();
         Concatenator concatenator = new Concatenator();
-        concatenator.concatenateFiles(requirementSearcher.getFilesToConcatenate());
+        if (requirementSearcher.getCondition()) {
+            concatenator.concatenateFiles(requirementSearcher.getFilesToConcatenate());
+        }
     }
 }
